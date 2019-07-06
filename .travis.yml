@@ -22,7 +22,7 @@ after_success:
   - docker push thevivekpandey/multi-worker
 
 deploy:
-  provide: elasticbeanstalk
+  provider: elasticbeanstalk
   region: us-east-2
   app: multi-docker
   env: MultiDocker-env
